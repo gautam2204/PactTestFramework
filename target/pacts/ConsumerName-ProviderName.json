@@ -1,0 +1,43 @@
+{
+  "provider": {
+    "name": "ProviderName"
+  },
+  "consumer": {
+    "name": "ConsumerName"
+  },
+  "interactions": [
+    {
+      "description": "This is a short description",
+      "request": {
+        "method": "POST",
+        "path": "/this/path",
+        "headers": {
+          "Content": "application/json"
+        },
+        "body": {
+          "url": "https://reqres.in/#support-heading",
+          "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+        }
+      },
+      "response": {
+        "status": 201,
+        "body": {
+          "Success": "Success appreciated!"
+        }
+      },
+      "providerStates": [
+        {
+          "name": "This is the first test"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "3.0.0"
+    },
+    "pact-jvm": {
+      "version": "4.0.10"
+    }
+  }
+}
